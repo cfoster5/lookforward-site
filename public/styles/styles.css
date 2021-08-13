@@ -1,0 +1,100 @@
+/* @media only screen and (max-width: 768px) { */
+#appLogo {
+  height: 200px;
+}
+
+/* } */
+
+.logoContainer {
+  margin-bottom: .5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appLogoContainer {
+  max-width: 900px;
+  margin: auto;
+}
+
+.reviewContainer {
+  max-width: 900px;
+  margin: auto;
+  /* min-height: 400px; */
+}
+
+.reviewTextContainer {
+  display: flex;
+}
+
+.reviewText {
+  margin: 24px auto;
+}
+
+.featureContainer {
+  display: flex;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  min-height: 400px;
+}
+
+@media (max-width: 549px) {
+
+  .reviewTextContainer,
+  .featureContainer,
+  .supportContainer {
+    flex-direction: column;
+  }
+}
+
+.featureTextContainer,
+.supportText {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: center;
+}
+
+@media (min-width: 549px) {
+  .featureContainer:nth-child(even) .featureTextContainer {
+    padding-right: 40px;
+  }
+
+  .featureContainer:nth-child(odd) .featureTextContainer {
+    order: 2;
+    padding-left: 40px;
+  }
+
+  .reviewText:nth-child(odd) {
+    padding-right: 20px;
+  }
+
+  .reviewText:nth-child(even) {
+    padding-left: 20px;
+  }
+
+  .supportButton {
+    max-width: 300px;
+  }
+}
+
+.featureImageContainer {
+  max-width: 300px;
+  margin: 24px auto;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.supportButton {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.supportContainer,
+.supportTitle {
+  display: flex;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  /* min-height: 400px; */
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LookForward</title>
+  <link rel="stylesheet" href="styles/bulma.min.css">
+  <link rel="stylesheet" href="styles/bulma-prefers-dark.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/fontawesome_all.css">
+  <style>
+    p {
+      margin: 1em 0;
+    }
+  </style>
+  <script>
+    function toggleClass() {
+      let burger = document.getElementById("navbarBurger");
+      burger.classList.toggle("is-active");
+      let navbarItems = document.getElementById("navbarItems");
+      navbarItems?.classList.toggle("is-active");
+    }
+  </script>
+</head>
+
+<body class="has-navbar-fixed-top">
+
+  <nav id="navbar" class="bd-navbar navbar has-shadow is-spaced is-fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+          <!-- <img src="https://bulma.io/images/bulma-logo.png"
+            alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28"> -->
+          <!-- <span class="title is-5" style="color: #3273dc;">LookForward</span> -->
+          <span class="title is-5">LookForward</span>
+        </a>
+        <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation" onclick="toggleClass()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="navbarItems" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"
+            href="https://www.paypal.com/donate?business=DZSDSYHC2DFQW&item_name=LookForward&currency_code=USD">
+            Donate on PayPal
+          </a>
+          <a class="navbar-item" href="./privacy.html">
+            Privacy Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <!-- <h1 class="title is-3">LookForward</h1> -->
+
+      <div class="container logoContainer">
+        <img src="./assets/iTunesArtwork@2x.svg" alt="" id="appLogo">
+      </div>
+      <p>LookForward helps you keep track of upcoming movie and game releases. Optional push notifications can remind
+        you of upcoming releases.
+      </p>
+
+
+      <div class="container logoContainer">
+        <a href="https://apps.apple.com/us/app/lookforward-entertainment/id1492748952">
+          <img src="./assets/appStore.svg" alt="" style="height: 60px;" />
+        </a>
+      </div>
+      <div class="container logoContainer">
+        <a
+          href='https://play.google.com/store/apps/details?id=com.lookforward.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+          <img alt='Get it on Google Play' src='./assets/google-play-badge.svg' style="height: 60px;" />
+        </a>
+      </div>
+
+      <!-- <a
+        href='https://play.google.com/store/apps/details?id=com.lookforward.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <img alt='Get it on Google Play' src='./assets/google-play-badge.svg' />
+      </a> -->
+
+      <!-- <h4 class="title is-4">What people are saying</h4> -->
+
+      <h4 class="title is-4">Reviews</h4>
+      <p>
+        <q>A wonderful app that has helped me keep track of all the games I’m interested in this fall! Plus, gotta love
+          the Dark Mode integration!</q>
+      </p>
+      <!-- <br />
+      <br /> -->
+      <p>
+        <q>This is a super convenient way for me to keep track of movies/games coming out soon that I'm interested in.
+          I'm
+          often googling release dates for things to loosely follow them and know how long until they come out but with
+          this I can just keep everything I want to follow in one list.</q>
+      </p>
+
+      <div class="parent">
+        <div class="screenshotTextContainer">
+          <h4 class="title is-4">Beautiful design</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor,
+            a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="screenshotImageContainer">
+          <img src="./assets/iPhoneX.png" alt="" style="width: 100%;">
+        </div>
+      </div>
+      <div class="parent">
+        <div class="screenshotTextContainer">
+          <h4 class="title is-4">Beautiful design 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor,
+            a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="screenshotImageContainer">
+          <img src="./assets/iPhoneX_1.png" alt="" style="width: 100%;">
+        </div>
+      </div>
+      <!-- <div class="parent">
+        <div class="screenshotTextContainer">
+          <h4 class="title is-4">Beautiful design 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor, a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="screenshotImageContainer">
+          <img src="./assets/iPhoneX_2.png" alt="" style="width: 100%;">
+        </div>
+      </div> -->
+      <!-- <div class="parent">
+        <div class="screenshotTextContainer">
+          <h4 class="title is-4">Beautiful design 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor, a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="screenshotImageContainer">
+          <img src="./assets/iPhoneX_3.png" alt="" style="width: 100%;">
+        </div>
+      </div> -->
+      <div class="parent">
+        <div class="screenshotTextContainer">
+          <h4 class="title is-4">Beautiful design 5</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor,
+            a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="screenshotImageContainer">
+          <img src="./assets/iPhoneX_4.png" alt="" style="width: 100%;">
+        </div>
+      </div>
+
+      <!-- <div class="columns">
+        <div class="column">
+          <img src="./assets/iPhoneX_1.png" alt="" style="height: 600px;">
+        </div>
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor, a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor, a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="column">
+          <img src="./assets/iPhoneX_2.png" alt="" style="height: 600px;">
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <img src="./assets/iPhoneX_3.png" alt="" style="height: 600px;">
+        </div>
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor, a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum tempor tellus, sed bibendum quam.
+            Etiam faucibus, diam facilisis consequat imperdiet, enim sapien tristique odio, vel accumsan odio eros sit
+            amet urna. Pellentesque at turpis fringilla, egestas nisl at, pharetra turpis. Phasellus eget mollis dolor, a
+            facilisis nulla. Sed quis magna libero. In sit amet placerat nibh. Curabitur quis suscipit sem. Duis rutrum
+            tincidunt ligula, non porta massa aliquet molestie. Aliquam gravida vitae justo id faucibus. Sed egestas
+            tortor ac quam porta dignissim. Mauris at ante dignissim, lacinia sem vel, malesuada eros. Morbi felis erat,
+            viverra eget posuere a, venenatis ut justo.
+          </p>
+        </div>
+        <div class="column">
+          <img src="./assets/iPhoneX_4.png" alt="" style="height: 600px;">
+        </div>
+      </div> -->
+
+      <h4 class="title is-4 supportTitle">How to support</h4>
+
+      <div class="supportContainer">
+        <div class="supportText">
+          <p>This app is built by a single developer. It remains ad free, so please consider supporting through
+            PayPal
+            if you like what I am making. </p>
+        </div>
+        <div class="supportButton">
+          <a class="button is-fullwidth"
+            style="height: 60px; font-size: 36px; border-color: rgb(166, 166, 166); color: white;"
+            href="https://www.paypal.com/donate?business=DZSDSYHC2DFQW&item_name=LookForward&currency_code=USD">
+            <i class="fab fa-paypal"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
