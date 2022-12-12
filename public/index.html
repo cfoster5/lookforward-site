@@ -30,7 +30,9 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="./index.html">
-          <span class="title is-5">LookForward</span>
+          <span class="title is-5" style="word-break: keep-all;">
+            LookForward
+          </span>
         </a>
         <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation" onclick="toggleClass()">
           <span></span>
@@ -41,8 +43,8 @@
       <div id="navbarItems" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item"
-            href="https://www.paypal.com/donate?business=DZSDSYHC2DFQW&item_name=LookForward&currency_code=USD">
-            Donate on PayPal
+            href="https://ko-fi.com/cfoster">
+            Buy Me a Coffee
           </a>
           <a class="navbar-item" href="./privacy.html">
             Privacy Policy
@@ -55,8 +57,12 @@
   <section class="section">
     <div class="container">
 
-      <div class="container logoContainer">
-        <img src="./assets/iTunesArtwork@2x.svg" alt="" id="appLogo">
+      <div>
+        <p id="aboutText">Movie and game release tracker for iOS and Android with a simple interface, optional push
+          notifications for
+          upcoming releases, and powerful discovery tools.
+        </p>
+        <img src="./assets/fanout_full.png" alt="" class="fanout" id="fanoutFull">
       </div>
       <img src="./assets/fanout_trim.png" alt="" class="fanout" id="fanoutTrim">
 
@@ -64,8 +70,6 @@
         <a href="https://apps.apple.com/us/app/lookforward-entertainment/id1492748952">
           <img src="./assets/appStore.svg" alt="" style="height: 60px;" />
         </a>
-      </div>
-      <div class="container logoContainer">
         <a
           href='https://play.google.com/store/apps/details?id=com.lookforward.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
           <img alt='Get it on Google Play' src='./assets/google-play-badge.svg' style="height: 60px;" />
@@ -76,7 +80,7 @@
         <h4 class="title is-4">Reviews</h4>
         <div class="reviewTextContainer">
           <p class="reviewText" style="flex: 1; margin-top: 0;">
-            <q>A wonderful app that has helped me keep track of all the games I’m interested in this fall! Plus, gotta
+            <q>A wonderful app that has helped me keep track of all the games I'm interested in this fall! Plus, gotta
               love
               the Dark Mode integration!</q>
           </p>
@@ -107,7 +111,7 @@
         <div class="featureTextContainer">
           <h4 class="title is-4">Details</h4>
           <p>
-            Tap on a release and see an overview, genres, credits, and trailers. 
+            Tap on a release and see an overview, genres, credits, and trailers.
           </p>
         </div>
         <div class="featureImageContainer">
@@ -130,18 +134,12 @@
 
       <div class="supportContainer">
         <div class="supportText">
-          <p style="margin-top: 0; margin-bottom: 1.5rem;">This app is built by a single developer. It remains ad free,
-            so please consider supporting through
-            PayPal
-            if you like what I am making. </p>
+          <p style="margin-top: 0; margin-bottom: 0;">This app is built by a single developer. It remains ad free,
+            so please consider a donation if you like what I am making.</p>
         </div>
-        <div class="supportButton">
-          <a class="button is-fullwidth"
-            style="height: 60px; font-size: 36px; border-color: rgb(166, 166, 166); color: white;"
-            href="https://www.paypal.com/donate?business=DZSDSYHC2DFQW&item_name=LookForward&currency_code=USD">
-            <i class="fab fa-paypal"></i>
-          </a>
-        </div>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+        <script
+          type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#4a0080', 'Q5Q4GZ0H7'); kofiwidget2.draw();</script>
       </div>
 
     </div>

@@ -3,6 +3,39 @@
   height: 200px;
 }
 
+.fanout {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+#aboutText {
+  margin-top: 0;
+}
+
+
+@media only screen and (max-width: 769px) {
+  #fanoutFull {
+    /* width: 100%; */
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #aboutText {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 60%;
+  }
+  #fanoutFull {
+    width: 60%;
+  }
+  #fanoutTrim {
+    display: none;
+  }
+}
+
 /* } */
 
 .logoContainer {
@@ -10,6 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 .appLogoContainer {
@@ -97,4 +131,8 @@
   position: relative;
   margin: auto;
   /* min-height: 400px; */
+}
+
+a.kofi-button {
+  min-height: 44px;
 }
