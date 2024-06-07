@@ -82,6 +82,12 @@
   }
 }
 
+@media (min-width: 550px) {
+  .supportText p {
+    margin-bottom: 0;
+  }
+}
+
 .featureTextContainer,
 .supportText {
   flex-grow: 1;
