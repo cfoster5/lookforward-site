@@ -3,43 +3,10 @@
   height: 200px;
 }
 
-.fanout {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 1em;
-}
-
-#aboutText {
-  margin-top: 0;
-}
-
-
-@media only screen and (max-width: 769px) {
-  #fanoutFull {
-    /* width: 100%; */
-    display: none;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  #aboutText {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    width: 60%;
-  }
-  #fanoutFull {
-    width: 60%;
-  }
-  #fanoutTrim {
-    display: none;
-  }
-}
-
 /* } */
 
 .logoContainer {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,92 +18,21 @@
   margin: auto;
 }
 
-.reviewContainer {
-  max-width: 900px;
-  margin: auto;
-  /* min-height: 400px; */
-}
-
-.reviewTextContainer {
-  display: flex;
-}
-
-.reviewText {
-  margin: 24px auto;
-}
-
-.featureContainer {
-  display: flex;
-  max-width: 900px;
-  position: relative;
-  margin: auto;
-  min-height: 400px;
-}
-
 @media (max-width: 549px) {
-
-  .reviewTextContainer,
-  .featureContainer,
   .supportContainer {
     flex-direction: column;
   }
 }
 
-@media (min-width: 550px) {
-  .supportText p {
-    margin-bottom: 0;
-  }
-}
-
-.featureTextContainer,
-.supportText {
-  flex-grow: 1;
-  flex-basis: 0;
-  align-self: center;
-}
-
 @media (min-width: 549px) {
-  .featureContainer:nth-child(even) .featureTextContainer {
-    padding-right: 40px;
-  }
-
-  .featureContainer:nth-child(odd) .featureTextContainer {
-    order: 2;
-    padding-left: 40px;
-  }
-
-  .reviewText:nth-child(odd) {
-    padding-right: 20px;
-  }
-
-  .reviewText:nth-child(even) {
-    padding-left: 20px;
-  }
-
   .supportButton {
     max-width: 300px;
   }
 }
 
-.featureImageContainer {
-  max-width: 300px;
-  margin: 24px auto;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
 .supportButton {
   flex-grow: 1;
   flex-basis: 0;
-}
-
-.supportContainer,
-.supportTitle {
-  display: flex;
-  max-width: 900px;
-  position: relative;
-  margin: auto;
-  /* min-height: 400px; */
 }
 
 a.kofi-button {
