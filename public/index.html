@@ -10,15 +10,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/fontawesome_all.css" />
     <link href="./styles/tailwind_output.css" rel="stylesheet" />
-    <script>
-      function toggleClass() {
-        let burger = document.getElementById("navbarBurger");
-        let navbarItems = document.getElementById("navbarItems");
-        burger.classList.toggle("is-active");
-        // navbarItems.classList.toggle("is-active");
-        navbarItems.classList.toggle("block");
-      }
-    </script>
+    <script src="script.js" defer></script>
   </head>
 
   <body class="has-navbar-fixed-top text-zinc-300">
@@ -35,40 +27,18 @@
           <a class="flex items-center text-zinc-300" href="./index.html">
             <span class="break-keep text-xl font-semibold"> LookForward </span>
           </a> -->
-          <!-- <div
-            id="navbarBurger"
-            class="navbar-burger burger"
-            data-target="navMenuDocumentation"
-            onclick="toggleClass()"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
           <button
             id="navButton"
             class="relative ml-auto block h-16 w-16 cursor-pointer lg:hidden"
           >
-            <!-- <span
-              aria-hidden="true"
-              class="absolute left-[calc(50%-8px)] top-[calc(50%-6px)] block h-px w-4 origin-center -translate-y-1.5 transform rounded bg-current transition"
-            ></span> -->
             <span
               aria-hidden="true"
               class="absolute block h-px w-4 origin-center -translate-y-1.5 transform rounded bg-current transition"
             ></span>
-            <!-- <span
-              aria-hidden="true"
-              class="absolute left-[calc(50%-8px)] top-[calc(50%-1px)] block h-px w-4 origin-center transform rounded bg-current transition"
-            ></span> -->
             <span
               aria-hidden="true"
               class="absolute block h-px w-4 origin-center transform rounded bg-current transition"
             ></span>
-            <!-- <span
-              aria-hidden="true"
-              class="absolute left-[calc(50%-8px)] top-[calc(50%+4px)] block h-px w-4 origin-center translate-y-1.5 transform rounded bg-current transition"
-            ></span> -->
             <span
               aria-hidden="true"
               class="absolute block h-px w-4 origin-center translate-y-1.5 transform rounded bg-current transition"
@@ -215,19 +185,5 @@
         </div>
       </div>
     </main>
-
-    <script>
-      let button = document.getElementById("navButton");
-      button.addEventListener("click", () => {
-        let children = button.children;
-        children[0].classList.toggle("rotate-45");
-        children[0].classList.toggle("-translate-y-1.5");
-        children[1].classList.toggle("opacity-0");
-        children[2].classList.toggle("-rotate-45");
-        children[2].classList.toggle("translate-y-1.5");
-        let navbarItems = document.getElementById("navbarItems");
-        navbarItems.classList.toggle("block");
-      });
-    </script>
   </body>
 </html>
