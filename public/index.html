@@ -1,151 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-itunes-app" content="app-id=1492748952" />
+    <title>LookForward</title>
+    <link rel="stylesheet" href="styles/bulma.min.css" />
+    <link rel="stylesheet" href="styles/bulma-prefers-dark.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/fontawesome_all.css" />
+    <style>
+      p {
+        margin: 1em 0;
+      }
+    </style>
+    <script>
+      function toggleClass() {
+        let burger = document.getElementById("navbarBurger");
+        burger.classList.toggle("is-active");
+        let navbarItems = document.getElementById("navbarItems");
+        navbarItems?.classList.toggle("is-active");
+      }
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-itunes-app" content="app-id=1492748952">
-  <title>LookForward</title>
-  <link rel="stylesheet" href="styles/bulma.min.css">
-  <link rel="stylesheet" href="styles/bulma-prefers-dark.css" />
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/fontawesome_all.css">
-  <style>
-    p {
-      margin: 1em 0;
-    }
-  </style>
-  <script>
-    function toggleClass() {
-      let burger = document.getElementById("navbarBurger");
-      burger.classList.toggle("is-active");
-      let navbarItems = document.getElementById("navbarItems");
-      navbarItems?.classList.toggle("is-active");
-    }
-  </script>
-</head>
-
-<body class="has-navbar-fixed-top">
-
-  <nav id="navbar" class="bd-navbar navbar has-shadow is-spaced is-fixed-top">
-    <div class="container">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="./index.html">
-          <span class="title is-5" style="word-break: keep-all;">
-            LookForward
-          </span>
-        </a>
-        <div id="navbarBurger" class="navbar-burger burger" data-target="navMenuDocumentation" onclick="toggleClass()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div id="navbarItems" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item"
-            href="https://ko-fi.com/cfoster">
-            Buy Me a Coffee
+  <body class="has-navbar-fixed-top">
+    <nav id="navbar" class="bd-navbar navbar has-shadow is-spaced is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="./index.html">
+            <span class="title is-5" style="word-break: keep-all">
+              LookForward
+            </span>
           </a>
-          <a class="navbar-item" href="./privacy.html">
-            Privacy Policy
+          <div
+            id="navbarBurger"
+            class="navbar-burger burger"
+            data-target="navMenuDocumentation"
+            onclick="toggleClass()"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="navbarItems" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://ko-fi.com/cfoster">
+              Buy Me a Coffee
+            </a>
+            <a class="navbar-item" href="./privacy.html"> Privacy Policy </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div>
+          <p id="aboutText">
+            Movie and game release tracker for iOS and Android with a simple
+            interface, optional push notifications for upcoming releases, and
+            powerful discovery tools.
+          </p>
+          <img
+            src="./assets/fanout_full.png"
+            alt=""
+            class="fanout"
+            id="fanoutFull"
+          />
+        </div>
+        <img
+          src="./assets/fanout_trim.png"
+          alt=""
+          class="fanout"
+          id="fanoutTrim"
+        />
+
+        <div class="container logoContainer">
+          <a
+            href="https://apps.apple.com/us/app/lookforward-entertainment/id1492748952"
+          >
+            <img src="./assets/appStore.svg" alt="" style="height: 60px" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.lookforward.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          >
+            <img
+              alt="Get it on Google Play"
+              src="./assets/google-play-badge.svg"
+              style="height: 60px"
+            />
           </a>
         </div>
-      </div>
-    </div>
-  </nav>
 
-  <section class="section">
-    <div class="container">
+        <div class="reviewContainer">
+          <h4 class="title is-4">Reviews</h4>
+          <div class="reviewTextContainer">
+            <p class="reviewText" style="flex: 1; margin-top: 0">
+              <q
+                >A wonderful app that has helped me keep track of all the games
+                I'm interested in this fall! Plus, gotta love the Dark Mode
+                integration!</q
+              >
+            </p>
+            <p class="reviewText" style="flex: 1; margin-top: 0">
+              <q
+                >This is a super convenient way for me to keep track of
+                movies/games coming out soon that I'm interested in. I'm often
+                googling release dates for things to loosely follow them and
+                know how long until they come out but with this I can just keep
+                everything I want to follow in one list.</q
+              >
+            </p>
+          </div>
+        </div>
 
-      <div>
-        <p id="aboutText">Movie and game release tracker for iOS and Android with a simple interface, optional push
-          notifications for
-          upcoming releases, and powerful discovery tools.
-        </p>
-        <img src="./assets/fanout_full.png" alt="" class="fanout" id="fanoutFull">
-      </div>
-      <img src="./assets/fanout_trim.png" alt="" class="fanout" id="fanoutTrim">
+        <div class="featureContainer">
+          <div class="featureTextContainer">
+            <h4 class="title is-4">Simple Discovery</h4>
+            <p>
+              You can't add movies and games to your Countdown list if you can't
+              find them easily. That's why the Find tab shows large posters for
+              upcoming releases and an easy to use searchbar where you can
+              search for a title.
+            </p>
+          </div>
+          <div class="featureImageContainer">
+            <img src="./assets/iPhone 12 Pro.png" alt="" style="width: 100%" />
+          </div>
+        </div>
+        <div class="featureContainer">
+          <div class="featureTextContainer">
+            <h4 class="title is-4">Details</h4>
+            <p>
+              Tap on a release and see an overview, genres, credits, and
+              trailers.
+            </p>
+          </div>
+          <div class="featureImageContainer">
+            <img
+              src="./assets/iPhone 12 Pro_1.png"
+              alt=""
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <div class="featureContainer">
+          <div class="featureTextContainer">
+            <h4 class="title is-4">Countdown</h4>
+            <p>
+              After adding movies and games to your list, you can see them and
+              their release dates on the Countdown tab.
+            </p>
+          </div>
+          <div class="featureImageContainer">
+            <img
+              src="./assets/iPhone 12 Pro_countdown.png"
+              alt=""
+              style="width: 100%; color: #4a0080"
+            />
+          </div>
+        </div>
 
-      <div class="container logoContainer">
-        <a href="https://apps.apple.com/us/app/lookforward-entertainment/id1492748952">
-          <img src="./assets/appStore.svg" alt="" style="height: 60px;" />
-        </a>
-        <a
-          href='https://play.google.com/store/apps/details?id=com.lookforward.app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-          <img alt='Get it on Google Play' src='./assets/google-play-badge.svg' style="height: 60px;" />
-        </a>
-      </div>
+        <h4 class="title is-4 supportTitle">How to support</h4>
 
-      <div class="reviewContainer">
-        <h4 class="title is-4">Reviews</h4>
-        <div class="reviewTextContainer">
-          <p class="reviewText" style="flex: 1; margin-top: 0;">
-            <q>A wonderful app that has helped me keep track of all the games I'm interested in this fall! Plus, gotta
-              love
-              the Dark Mode integration!</q>
-          </p>
-          <p class="reviewText" style="flex: 1; margin-top: 0;">
-            <q>This is a super convenient way for me to keep track of movies/games coming out soon that I'm interested
-              in.
-              I'm
-              often googling release dates for things to loosely follow them and know how long until they come out but
-              with
-              this I can just keep everything I want to follow in one list.</q>
-          </p>
+        <div class="supportContainer">
+          <div class="supportText">
+            <p style="margin-top: 0">
+              This app is built by a single developer. It remains ad free, so
+              please consider a donation if you like what I am making.
+            </p>
+          </div>
+          <script
+            type="text/javascript"
+            src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
+          ></script>
+          <script type="text/javascript">
+            kofiwidget2.init("Support Me on Ko-fi", "#0A84FF", "Q5Q4GZ0H7");
+            kofiwidget2.draw();
+          </script>
         </div>
       </div>
-
-      <div class="featureContainer">
-        <div class="featureTextContainer">
-          <h4 class="title is-4">Simple Discovery</h4>
-          <p>
-            You can't add movies and games to your Countdown list if you can't find them easily. That's why the Find tab
-            shows large posters for upcoming releases and an easy to use searchbar where you can search for a title.
-          </p>
-        </div>
-        <div class="featureImageContainer">
-          <img src="./assets/iPhone 12 Pro.png" alt="" style="width: 100%;">
-        </div>
-      </div>
-      <div class="featureContainer">
-        <div class="featureTextContainer">
-          <h4 class="title is-4">Details</h4>
-          <p>
-            Tap on a release and see an overview, genres, credits, and trailers.
-          </p>
-        </div>
-        <div class="featureImageContainer">
-          <img src="./assets/iPhone 12 Pro_1.png" alt="" style="width: 100%;">
-        </div>
-      </div>
-      <div class="featureContainer">
-        <div class="featureTextContainer">
-          <h4 class="title is-4">Countdown</h4>
-          <p>
-            After adding movies and games to your list, you can see them and their release dates on the Countdown tab.
-          </p>
-        </div>
-        <div class="featureImageContainer">
-          <img src="./assets/iPhone 12 Pro_countdown.png" alt="" style="width: 100%; color: #4a0080">
-        </div>
-      </div>
-
-      <h4 class="title is-4 supportTitle">How to support</h4>
-
-      <div class="supportContainer">
-        <div class="supportText">
-          <p style="margin-top: 0;">This app is built by a single developer. It remains ad free,
-            so please consider a donation if you like what I am making.</p>
-        </div>
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-        <script
-          type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#0A84FF', 'Q5Q4GZ0H7'); kofiwidget2.draw();</script>
-      </div>
-
-    </div>
-  </section>
-
-</body>
-
+    </section>
+  </body>
 </html>
